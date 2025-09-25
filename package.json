@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "name": "cps-manager-app",
+  "description": "My application description",
+  "version": "1.0.27",
+  "author": "Luong Ngoc Minh <ngocminhluong182@gmail.com>",
+  "main": "app/background.js",
+  "repository": "luongngocminh/cps-prototype",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:linux": "nextron build --linux",
+    "publish:linux": "nextron build --linux --publish always",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^2.0.3",
+    "@babel/runtime": "^7.23.6",
+    "@babel/runtime-corejs3": "^7.23.6",
+    "@tanstack/react-query": "^5.14.6",
+    "electron-log": "^5.0.3",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^6.1.7",
+    "react-hot-toast": "^2.4.1",
+    "recharts": "^2.14.1"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@electron-toolkit/eslint-config-prettier": "2.0.0",
+    "@electron-toolkit/eslint-config-ts": "1.0.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "antd": "^4.24.16",
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4",
+    "eslint": "8.56.0",
+    "next": "^12.3.4",
+    "nextron": "^8.12.0",
+    "prettier": "3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.6.5"
+}

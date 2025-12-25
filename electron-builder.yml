@@ -1,0 +1,24 @@
+appId: com.cps.server
+productName: CPS Manager
+copyright: Copyright © 2023 Luong Ngoc Minh
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+linux:
+  publish:
+  - provider: github
+    repo: cps-app-release
+    owner: luongngocminh
+    token: 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
+  target:
+    - target: deb
+      arch: x64
+    - target: snap
+      arch: x64
+  desktop: CPSManager
+

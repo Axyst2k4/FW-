@@ -1,0 +1,8 @@
+node_modules
+dist
+out
+.gitignore
+
+server/node_modules
+server/build
+

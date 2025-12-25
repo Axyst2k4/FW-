@@ -1,0 +1,10 @@
+{
+  "vsmqtt.brokerProfiles": [
+    {
+      "name": "CPS",
+      "host": "broker.hivemq.com",
+      "port": 1883,
+      "clientId": "vsmqtt_client_fb57"
+    }
+  ]
+}

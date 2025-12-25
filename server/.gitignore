@@ -1,0 +1,23 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+# dependencies
+/node_modules
+/.idea
+# misc
+.DS_Store
+.env*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+!.env.docker
+build
+
+# Try to ignore volumes/ but still keeping mqtt configs
+volumes/*
+!volumes/**/
+volumes/data
+volumes/etc/*
+!volumes/etc/**/
+volumes/etc/mqtt/log
+
